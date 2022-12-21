@@ -1,4 +1,9 @@
+from random import *
+from math import *
+
+
 #1
+
 
 #try:
 #    nimi=str(input("What is your name? "))
@@ -14,16 +19,16 @@
 #        elif vana>65 and vana<=100:
 #            print("Okei, siis ostame sooduspilet pilet")
 #        elif vana<1 or vana>100:
-#            print("Не лги мне!")
+#            print("VIGA!")
 #except:
 #    print("TypeError")
 
 #2
 #try:
-#    nimi1=input("Как звать первого человека? \n")
-#    nimi2=input("Как звать второго человека? \n")
+#    nimi1=input("Mis sinu nimi on? \n")
+#    nimi2=input("Mis teine nimi on? \n")
 #    if nimi1.isalpha()==True and nimi2.isalpha()==True:
-#        print(f"{nimi1} и {nimi2}, вы сегодня соседи.")
+#        print(f"{nimi1} и {nimi2}, Te olete nabre.")
 #    elif nimi1.isalpha()==False or nimi2.isalpha()==False:
 #        print("no")
 #except:
@@ -71,15 +76,75 @@
 #5
 
 #try:
-#    degriees=int(input("Сколько градусов? "))
-#    if degriees>18:
-#        print(degriees, "больше 18 градусов")
+#    n=int(input("Mitu toa korteris?"))
+#    for i in range(1,n+1,1):
+#        t=float(input(f"{i}. Toa temperatuur: "))
+#        if t>18:
+#            print("Soe.")
+#        else:
+#            print("Külm.")
+
+#except:
+#    print("TyperError")
+
+#Домашний вариант#
+
+#try:
+#    degrees=int(input("Temperatuur? "))
+#    if degrees>18:
+#        print(degriees, "Sureem kui 18")
 #    elif degriees==18:
-#        print("Зимой предпочтительнее комнатная температура")
+#        print("See on komfortne tubatemperatuur")
 #    else:
-#        print(degriees, "меньше 18 градусов")
+#        print(degrees, "Enam kui 18")
 #except:
 #    print(TypeError)
+
+
+#6#
+
+#p=k=l=0
+#kogus=randint(1,20)
+#print("Kokku on",kogus,"inimest")
+#for i in range(1,kogus+1,1):
+#     pikkus=randint(56,256)
+#     if pikkus>170:
+#        print("Pikk")
+#        p+=1
+#     elif pikkus>155 and pikkus<=170:
+#         print("Keskmine")
+#         k+=1
+#     else:
+#         print("Lühike")
+#         l+=1
+#print("\n")
+#print(f"Piika kasvu {p} inimest")
+#print(f"Keskmise kasvu {k} inimest")
+#print(f"Lühike kasvu {l} inimest")
+         
+#p=k=l=0
+#kogus=randint(1,20)
+#print("Kokku on", kogus, "inimest")
+#i=0
+#while i<kogus:
+#    i+=1
+#    pikkus=randint(56,256)
+#    if pikkus>170:
+#        print("Pikk")
+#        p+=1
+#    elif pikkus>155 and pikkus<=170:
+#         print("Keskmine")
+#         k+=1
+#    else:
+#         print("Lühike")
+#         l+=1
+#print("\n")
+#print(f"Piika kasvu {p} inimest")
+#print(f"Keskmise kasvu {k} inimest")
+#print(f"Lühike kasvu {l} inimest")
+
+
+
 
 
 #7#
@@ -169,7 +234,25 @@
 #except:
 #    print("Vale Andmetüüp")
 
+
 #9#
+
+
+#i=0
+#while i==0:
+#        try:
+#            a=float(input("Первая сторона: "))
+#            b=float(input("Вторая сторона: "))
+#            if a>0 and b>0 and a==b:
+#                print("Квадрат")
+#                i=1
+#            else:
+#                print("Не квадрат")
+#        except:
+#            print("Введи еще раз")
+
+
+#Домашний вариант#
 
 
 #try:
@@ -246,3 +329,6 @@
 #        print("sa oled naine sest, et sa ei sobi")
 #except:
 #    print("Value Error")
+
+
+
